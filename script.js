@@ -486,19 +486,824 @@ updateOnline();
 const groups = ['A','B','C','D','E','F','G','H','I','J','K','L'];
 
   const groupData = {
-    A: generateMatches('Brazil', 'Japan'),
-    B: generateMatches('Germany', 'Mexico'),
-    C: generateMatches('France', 'USA'),
-    D: generateMatches('Spain', 'Morocco'),
-    E: generateMatches('Argentina', 'Canada'),
-    F: generateMatches('Portugal', 'Uruguay'),
-    G: generateMatches('Belgium', 'Egypt'),
-    H: generateMatches('England', 'Poland'),
-    I: generateMatches('Italy', 'Korea'),
-    J: generateMatches('Croatia', 'Serbia'),
-    K: generateMatches('Netherlands', 'Turkey'),
-    L: generateMatches('Denmark', 'Chile')
-  };
+
+  A: [
+    {
+      date:'11.06.2026',
+      time:'22:00',
+
+      team1:'Mexico',
+      flag1:'mx',
+
+      team2:'South Africa',
+      flag2:'za'
+    },
+
+    {
+      date:'12.06.2026',
+      time:'05:00',
+
+      team1:'South Korea',
+      flag1:'kr',
+
+      team2:'Czechia',
+      flag2:'cz'
+    },
+
+    {
+      date:'18.06.2026',
+      time:'19:00',
+
+      team1:'Czechia',
+      flag1:'cz',
+
+      team2:'South Africa',
+      flag2:'za'
+    },
+
+    {
+      date:'19.06.2026',
+      time:'04:00',
+
+      team1:'Mexico',
+      flag1:'mx',
+
+      team2:'South Korea',
+      flag2:'kr'
+    },
+
+    {
+      date:'25.06.2026',
+      time:'04:00',
+
+      team1:'Czechia',
+      flag1:'cz',
+
+      team2:'Mexico',
+      flag2:'mx'
+    },
+
+    {
+      date:'25.06.2026',
+      time:'04:00',
+
+      team1:'South Africa',
+      flag1:'za',
+
+      team2:'South Korea',
+      flag2:'kr'
+    }
+  ],
+
+  B: [
+    {
+      date:'12.06.2026',
+      time:'22:00',
+
+      team1:'Canada',
+      flag1:'ca',
+
+      team2:'Bosnia and Herzegovina',
+      flag2:'ba'
+    },
+
+    {
+      date:'13.06.2026',
+      time:'22:00',
+
+      team1:'Qatar',
+      flag1:'qa',
+
+      team2:'Switzerland',
+      flag2:'ch'
+    },
+
+    {
+      date:'18.06.2026',
+      time:'22:00',
+
+      team1:'Switzerland',
+      flag1:'ch',
+
+      team2:'Bosnia and Herzegovina',
+      flag2:'ba'
+    },
+
+    {
+      date:'19.06.2026',
+      time:'01:00',
+
+      team1:'Canada',
+      flag1:'ca',
+
+      team2:'Qatar',
+      flag2:'qa'
+    },
+
+    {
+      date:'24.06.2026',
+      time:'22:00',
+
+      team1:'Switzerland',
+      flag1:'ch',
+
+      team2:'Canada',
+      flag2:'ca'
+    },
+
+    {
+      date:'24.06.2026',
+      time:'22:00',
+
+      team1:'Bosnia and Herzegovina',
+      flag1:'ba',
+
+      team2:'Qatar',
+      flag2:'qa'
+    }
+  ],
+
+  C: [
+    {
+      date:'14.06.2026',
+      time:'01:00',
+
+      team1:'Brazil',
+      flag1:'br',
+
+      team2:'Morocco',
+      flag2:'ma'
+    },
+
+    {
+      date:'14.06.2026',
+      time:'04:00',
+
+      team1:'Haiti',
+      flag1:'ht',
+
+      team2:'Scotland',
+      flag2:'gb-sct'
+    },
+
+    {
+      date:'20.06.2026',
+      time:'01:00',
+
+      team1:'Scotland',
+      flag1:'gb-sct',
+
+      team2:'Morocco',
+      flag2:'ma'
+    },
+
+    {
+      date:'20.06.2026',
+      time:'03:30',
+
+      team1:'Brazil',
+      flag1:'br',
+
+      team2:'Haiti',
+      flag2:'ht'
+    },
+
+    {
+      date:'25.06.2026',
+      time:'01:00',
+
+      team1:'Morocco',
+      flag1:'ma',
+
+      team2:'Haiti',
+      flag2:'ht'
+    },
+
+    {
+      date:'25.06.2026',
+      time:'01:00',
+
+      team1:'Scotland',
+      flag1:'gb-sct',
+
+      team2:'Brazil',
+      flag2:'br'
+    }
+  ],
+
+  D: [
+    {
+      date:'13.06.2026',
+      time:'04:00',
+
+      team1:'USA',
+      flag1:'us',
+
+      team2:'Paraguay',
+      flag2:'py'
+    },
+
+    {
+      date:'14.06.2026',
+      time:'07:00',
+
+      team1:'Australia',
+      flag1:'au',
+
+      team2:'Turkey',
+      flag2:'tr'
+    },
+
+    {
+      date:'19.06.2026',
+      time:'22:00',
+
+      team1:'USA',
+      flag1:'us',
+
+      team2:'Australia',
+      flag2:'au'
+    },
+
+    {
+      date:'20.06.2026',
+      time:'06:00',
+
+      team1:'Turkey',
+      flag1:'tr',
+
+      team2:'Paraguay',
+      flag2:'py'
+    },
+
+    {
+      date:'26.06.2026',
+      time:'05:00',
+
+      team1:'Turkey',
+      flag1:'tr',
+
+      team2:'USA',
+      flag2:'us'
+    },
+
+    {
+      date:'26.06.2026',
+      time:'05:00',
+
+      team1:'Paraguay',
+      flag1:'py',
+
+      team2:'Australia',
+      flag2:'au'
+    }
+  ],
+
+  E: [
+    {
+      date:'14.06.2026',
+      time:'20:00',
+
+      team1:'Germany',
+      flag1:'de',
+
+      team2:'Curacao',
+      flag2:'cw'
+    },
+
+    {
+      date:'15.06.2026',
+      time:'02:00',
+
+      team1:'Ivory Coast',
+      flag1:'ci',
+
+      team2:'Ecuador',
+      flag2:'ec'
+    },
+
+    {
+      date:'20.06.2026',
+      time:'23:00',
+
+      team1:'Germany',
+      flag1:'de',
+
+      team2:'Ivory Coast',
+      flag2:'ci'
+    },
+
+    {
+      date:'21.06.2026',
+      time:'03:00',
+
+      team1:'Ecuador',
+      flag1:'ec',
+
+      team2:'Curacao',
+      flag2:'cw'
+    },
+
+    {
+      date:'25.06.2026',
+      time:'23:00',
+
+      team1:'Curacao',
+      flag1:'cw',
+
+      team2:'Ivory Coast',
+      flag2:'ci'
+    },
+
+    {
+      date:'25.06.2026',
+      time:'23:00',
+
+      team1:'Ecuador',
+      flag1:'ec',
+
+      team2:'Germany',
+      flag2:'de'
+    }
+  ],
+
+  F: [
+    {
+      date:'14.06.2026',
+      time:'23:00',
+
+      team1:'Netherlands',
+      flag1:'nl',
+
+      team2:'Japan',
+      flag2:'jp'
+    },
+
+    {
+      date:'15.06.2026',
+      time:'05:00',
+
+      team1:'Sweden',
+      flag1:'se',
+
+      team2:'Tunisia',
+      flag2:'tn'
+    },
+
+    {
+      date:'20.06.2026',
+      time:'20:00',
+
+      team1:'Netherlands',
+      flag1:'nl',
+
+      team2:'Sweden',
+      flag2:'se'
+    },
+
+    {
+      date:'21.06.2026',
+      time:'07:00',
+
+      team1:'Tunisia',
+      flag1:'tn',
+
+      team2:'Japan',
+      flag2:'jp'
+    },
+
+    {
+      date:'26.06.2026',
+      time:'02:00',
+
+      team1:'Japan',
+      flag1:'jp',
+
+      team2:'Sweden',
+      flag2:'se'
+    },
+
+    {
+      date:'26.06.2026',
+      time:'02:00',
+
+      team1:'Tunisia',
+      flag1:'tn',
+
+      team2:'Netherlands',
+      flag2:'nl'
+    }
+  ],
+
+  G: [
+    {
+      date:'15.06.2026',
+      time:'22:00',
+
+      team1:'Belgium',
+      flag1:'be',
+
+      team2:'Egypt',
+      flag2:'eg'
+    },
+
+    {
+      date:'16.06.2026',
+      time:'04:00',
+
+      team1:'Iran',
+      flag1:'ir',
+
+      team2:'New Zealand',
+      flag2:'nz'
+    },
+
+    {
+      date:'21.06.2026',
+      time:'22:00',
+
+      team1:'Belgium',
+      flag1:'be',
+
+      team2:'Iran',
+      flag2:'ir'
+    },
+
+    {
+      date:'22.06.2026',
+      time:'04:00',
+
+      team1:'New Zealand',
+      flag1:'nz',
+
+      team2:'Egypt',
+      flag2:'eg'
+    },
+
+    {
+      date:'27.06.2026',
+      time:'06:00',
+
+      team1:'New Zealand',
+      flag1:'nz',
+
+      team2:'Belgium',
+      flag2:'be'
+    },
+
+    {
+      date:'27.06.2026',
+      time:'06:00',
+
+      team1:'Egypt',
+      flag1:'eg',
+
+      team2:'Iran',
+      flag2:'ir'
+    }
+  ],
+
+  H: [
+    {
+      date:'15.06.2026',
+      time:'19:00',
+
+      team1:'Spain',
+      flag1:'es',
+
+      team2:'Cape Verde',
+      flag2:'cv'
+    },
+
+    {
+      date:'16.06.2026',
+      time:'01:00',
+
+      team1:'Saudi Arabia',
+      flag1:'sa',
+
+      team2:'Uruguay',
+      flag2:'uy'
+    },
+
+    {
+      date:'21.06.2026',
+      time:'19:00',
+
+      team1:'Spain',
+      flag1:'es',
+
+      team2:'Saudi Arabia',
+      flag2:'sa'
+    },
+
+    {
+      date:'22.06.2026',
+      time:'01:00',
+
+      team1:'Uruguay',
+      flag1:'uy',
+
+      team2:'Cape Verde',
+      flag2:'cv'
+    },
+
+    {
+      date:'27.06.2026',
+      time:'03:00',
+
+      team1:'Cape Verde',
+      flag1:'cv',
+
+      team2:'Saudi Arabia',
+      flag2:'sa'
+    },
+
+    {
+      date:'27.06.2026',
+      time:'03:00',
+
+      team1:'Uruguay',
+      flag1:'uy',
+
+      team2:'Spain',
+      flag2:'es'
+    }
+  ],
+
+  I: [
+    {
+      date:'16.06.2026',
+      time:'22:00',
+
+      team1:'France',
+      flag1:'fr',
+
+      team2:'Senegal',
+      flag2:'sn'
+    },
+
+    {
+      date:'17.06.2026',
+      time:'01:00',
+
+      team1:'Iraq',
+      flag1:'iq',
+
+      team2:'Norway',
+      flag2:'no'
+    },
+
+    {
+      date:'23.06.2026',
+      time:'00:00',
+
+      team1:'France',
+      flag1:'fr',
+
+      team2:'Iraq',
+      flag2:'iq'
+    },
+
+    {
+      date:'23.06.2026',
+      time:'03:00',
+
+      team1:'Norway',
+      flag1:'no',
+
+      team2:'Senegal',
+      flag2:'sn'
+    },
+
+    {
+      date:'26.06.2026',
+      time:'22:00',
+
+      team1:'Norway',
+      flag1:'no',
+
+      team2:'France',
+      flag2:'fr'
+    },
+
+    {
+      date:'26.06.2026',
+      time:'22:00',
+
+      team1:'Senegal',
+      flag1:'sn',
+
+      team2:'Iraq',
+      flag2:'iq'
+    }
+  ],
+
+  J: [
+    {
+      date:'17.06.2026',
+      time:'04:00',
+
+      team1:'Argentina',
+      flag1:'ar',
+
+      team2:'Algeria',
+      flag2:'dz'
+    },
+
+    {
+      date:'17.06.2026',
+      time:'07:00',
+
+      team1:'Austria',
+      flag1:'at',
+
+      team2:'Jordan',
+      flag2:'jo'
+    },
+
+    {
+      date:'22.06.2026',
+      time:'20:00',
+
+      team1:'Argentina',
+      flag1:'ar',
+
+      team2:'Austria',
+      flag2:'at'
+    },
+
+    {
+      date:'23.06.2026',
+      time:'06:00',
+
+      team1:'Jordan',
+      flag1:'jo',
+
+      team2:'Algeria',
+      flag2:'dz'
+    },
+
+    {
+      date:'28.06.2026',
+      time:'05:00',
+
+      team1:'Jordan',
+      flag1:'jo',
+
+      team2:'Argentina',
+      flag2:'ar'
+    },
+
+    {
+      date:'28.06.2026',
+      time:'05:00',
+
+      team1:'Algeria',
+      flag1:'dz',
+
+      team2:'Austria',
+      flag2:'at'
+    }
+  ],
+
+  K: [
+  {
+    date:'17.06.2026',
+    time:'20:00',
+
+    team1:'Portugal',
+    flag1:'pt',
+
+    team2:'DR Congo',
+    flag2:'cd'
+  },
+
+  {
+    date:'18.06.2026',
+    time:'05:00',
+
+    team1:'Uzbekistan',
+    flag1:'uz',
+
+    team2:'Colombia',
+    flag2:'co'
+  },
+
+  {
+    date:'23.06.2026',
+    time:'20:00',
+
+    team1:'Portugal',
+    flag1:'pt',
+
+    team2:'Uzbekistan',
+    flag2:'uz'
+  },
+
+  {
+    date:'24.06.2026',
+    time:'05:00',
+
+    team1:'Colombia',
+    flag1:'co',
+
+    team2:'DR Congo',
+    flag2:'cd'
+  },
+
+  {
+    date:'28.06.2026',
+    time:'02:30',
+
+    team1:'DR Congo',
+    flag1:'cd',
+
+    team2:'Uzbekistan',
+    flag2:'uz'
+  },
+
+  {
+    date:'28.06.2026',
+    time:'02:30',
+
+    team1:'Colombia',
+    flag1:'co',
+
+    team2:'Portugal',
+    flag2:'pt'
+  }
+],
+
+  L: [
+    {
+      date:'17.06.2026',
+      time:'23:00',
+
+      team1:'England',
+      flag1:'gb-eng',
+
+      team2:'Croatia',
+      flag2:'hr'
+    },
+
+    {
+      date:'18.06.2026',
+      time:'02:00',
+
+      team1:'Ghana',
+      flag1:'gh',
+
+      team2:'Panama',
+      flag2:'pa'
+    },
+
+    {
+      date:'23.06.2026',
+      time:'23:00',
+
+      team1:'England',
+      flag1:'gb-eng',
+
+      team2:'Ghana',
+      flag2:'gh'
+    },
+
+    {
+      date:'24.06.2026',
+      time:'02:00',
+
+      team1:'Panama',
+      flag1:'pa',
+
+      team2:'Croatia',
+      flag2:'hr'
+    },
+
+    {
+      date:'28.06.2026',
+      time:'00:00',
+
+      team1:'Panama',
+      flag1:'pa',
+
+      team2:'England',
+      flag2:'gb-eng'
+    },
+
+    {
+      date:'28.06.2026',
+      time:'00:00',
+
+      team1:'Croatia',
+      flag1:'hr',
+
+      team2:'Ghana',
+      flag2:'gh'
+    }
+  ]
+
+};
 
   const groupsSlider = document.getElementById('groupsSlider');
   const matchesSlider = document.getElementById('matchesSlider');
@@ -512,9 +1317,6 @@ const groups = ['A','B','C','D','E','F','G','H','I','J','K','L'];
 
     btn.classList.add('group-btn');
 
-    if(group === 'A'){
-      btn.classList.add('active');
-    }
 
     btn.innerText = group;
 
@@ -538,8 +1340,18 @@ const groups = ['A','B','C','D','E','F','G','H','I','J','K','L'];
         <div class="table-header">
 
           <div class="table-title">
-            ⚽ GROUP ${group} MATCHES
-          </div>
+
+          <img
+            src="./img/ball-title.svg"
+            alt=""
+            class="table-title-icon"
+          >
+
+          <span>
+            GROUP ${group} MATCHES
+          </span>
+
+        </div>
 
           <div class="table-time">
             All times in your timezone
@@ -554,13 +1366,13 @@ const groups = ['A','B','C','D','E','F','G','H','I','J','K','L'];
             <div class="match-row">
 
               <div class="date">
-                15 JUN 2026
+                ${match.date}
               </div>
 
               <div class="team">
 
                 <div class="flag">
-                  <img src="${match.flag1}" alt="">
+                  <img src="https://flagcdn.com/w80/${match.flag1}.png" alt="">
                 </div>
 
                 <div class="team-name">
@@ -576,7 +1388,7 @@ const groups = ['A','B','C','D','E','F','G','H','I','J','K','L'];
               <div class="team">
 
                 <div class="flag">
-                  <img src="${match.flag2}" alt="">
+                  <img src="https://flagcdn.com/w80/${match.flag2}.png" alt="">
                 </div>
 
                 <div class="team-name">
@@ -586,7 +1398,7 @@ const groups = ['A','B','C','D','E','F','G','H','I','J','K','L'];
               </div>
 
               <div class="time">
-                22:00
+                ${match.time}
               </div>
 
               <div class="arrow">
@@ -617,24 +1429,28 @@ const groups = ['A','B','C','D','E','F','G','H','I','J','K','L'];
 
   });
 
+  /* INITIAL STATE */
+
+   setTimeout(() => {
+      switchGroup(0);
+    }, 0);
+
   // SWITCH
 
   function switchGroup(index){
 
-    const width = document.querySelector('.matches-wrapper').offsetWidth;
+  matchesSlider.style.transform =
+    `translateX(-${index * 100}%)`;
 
-    matchesSlider.style.transform =
-      `translateX(-${index * width}px)`;
+  document.querySelectorAll('.group-btn')
+    .forEach(btn => btn.classList.remove('active'));
 
-    document.querySelectorAll('.group-btn')
-      .forEach(btn => btn.classList.remove('active'));
+  document.querySelectorAll('.group-btn')[index]
+    .classList.add('active');
 
-    document.querySelectorAll('.group-btn')[index]
-      .classList.add('active');
+  currentGroup.innerText = groups[index];
 
-    currentGroup.innerText = groups[index];
-
-  }
+}
 
   // SWIPE
 
@@ -678,45 +1494,45 @@ const groups = ['A','B','C','D','E','F','G','H','I','J','K','L'];
 
   // DEMO MATCH DATA
 
-  function generateMatches(team1, team2){
+  function generateMatches(team1, team2, flagCode1, flagCode2){
 
-    return [
-      {
-        team1,
-        team2,
-        flag1:'https://flagcdn.com/w80/be.png',
-        flag2:'https://flagcdn.com/w80/eg.png'
-      },
-      {
-        team1,
-        team2,
-        flag1:'https://flagcdn.com/w80/be.png',
-        flag2:'https://flagcdn.com/w80/eg.png'
-      },
-      {
-        team1,
-        team2,
-        flag1:'https://flagcdn.com/w80/be.png',
-        flag2:'https://flagcdn.com/w80/eg.png'
-      },
-      {
-        team1,
-        team2,
-        flag1:'https://flagcdn.com/w80/be.png',
-        flag2:'https://flagcdn.com/w80/eg.png'
-      },
-      {
-        team1,
-        team2,
-        flag1:'https://flagcdn.com/w80/be.png',
-        flag2:'https://flagcdn.com/w80/eg.png'
-      },
-      {
-        team1,
-        team2,
-        flag1:'https://flagcdn.com/w80/be.png',
-        flag2:'https://flagcdn.com/w80/eg.png'
-      }
-    ];
+      return [
+        {
+          team1,
+          team2,
+          flag1:`https://flagcdn.com/w80/${flagCode1}.png`,
+          flag2:`https://flagcdn.com/w80/${flagCode2}.png`
+        },
+        {
+          team1,
+          team2,
+          flag1:`https://flagcdn.com/w80/${flagCode1}.png`,
+          flag2:`https://flagcdn.com/w80/${flagCode2}.png`
+        },
+        {
+          team1,
+          team2,
+          flag1:`https://flagcdn.com/w80/${flagCode1}.png`,
+          flag2:`https://flagcdn.com/w80/${flagCode2}.png`
+        },
+        {
+          team1,
+          team2,
+          flag1:`https://flagcdn.com/w80/${flagCode1}.png`,
+          flag2:`https://flagcdn.com/w80/${flagCode2}.png`
+        },
+        {
+          team1,
+          team2,
+          flag1:`https://flagcdn.com/w80/${flagCode1}.png`,
+          flag2:`https://flagcdn.com/w80/${flagCode2}.png`
+        },
+        {
+          team1,
+          team2,
+          flag1:`https://flagcdn.com/w80/${flagCode1}.png`,
+          flag2:`https://flagcdn.com/w80/${flagCode2}.png`
+        }
+      ];
 
-  }
+    }
