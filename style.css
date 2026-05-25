@@ -2902,7 +2902,8 @@ html[dir="rtl"] .about-inner{
   }
 
   .wrapper{
-    padding:16px 12px 24px;
+    
+    padding:77px 16px 12px 24px;
     position:relative;
   }
 
@@ -3089,7 +3090,7 @@ html[dir="rtl"] .about-inner{
   .cup-image{
     position:absolute;
 
-    top:10px;
+    top:60px;
     right:12px;
 
     width:170px;
