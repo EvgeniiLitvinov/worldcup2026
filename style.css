@@ -2910,25 +2910,27 @@ html[dir="rtl"] .about-inner{
   /* TITLES */
 
   .top-title{
-    font-size:14px;
+    font-size:12px;
 
-    margin-bottom:8px;
+    margin-bottom:5px;
   }
 
   .group-title{
     gap:8px;
 
-    margin-bottom:8px;
+    margin-bottom:4px;
+
+    padding-right:120px;
   }
 
   .group-title span{
-    font-size:38px;
+    font-size:34px;
   }
 
   .subtitle{
     font-size:14px;
 
-    margin-bottom:16px;
+    margin-bottom:9px;
   }
 
   /* CONTENT */
@@ -2936,7 +2938,7 @@ html[dir="rtl"] .about-inner{
   .content{
     flex-direction:column;
 
-    gap:14px;
+    gap:10px;
   }
 
   /* GROUP BUTTONS */
@@ -2944,11 +2946,9 @@ html[dir="rtl"] .about-inner{
   .groups-slider{
     gap:6px;
 
-    margin-bottom:16px;
+    margin-bottom:12px;
 
     overflow-x:auto;
-
-    padding-bottom:6px;
   }
 
   .group-btn{
@@ -3078,6 +3078,10 @@ html[dir="rtl"] .about-inner{
 
   /* RIGHT COLUMN */
 
+  .right-side {
+    gap: 8px;
+  }
+
   .right-column{
     width:100%;
 
@@ -3092,11 +3096,11 @@ html[dir="rtl"] .about-inner{
   .cup-image{
     position:absolute;
 
-    top:60px;
+    top:65px;
     right:12px;
 
-    width:170px;
-    height:125px;
+    width:150px;
+    height:100px;
 
     z-index:-1;
 
@@ -3114,9 +3118,6 @@ html[dir="rtl"] .about-inner{
     object-fit:contain;
   }
 
-  .group-title{
-    padding-right:120px;
-  }
 
   /* CARD */
 
